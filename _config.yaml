@@ -1,0 +1,7 @@
+title: "Tin Dog Blog"
+email: "jamesaglynn10@gmail.com"
+description: "Tin Dog is a subsidiary of Jimmy's Company, (their R&D division,) dedicated to whatever they feel like doing instead of work with their tens of dollars of funding."
+plugins:
+  - "jekyll-feed"
+  - "jekyll-paginate"
+  - "jekyll/tagging" # This caused my at least an hour of pain. (/ instead of -)
