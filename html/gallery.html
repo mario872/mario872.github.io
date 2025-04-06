@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="../manifest.json" />
+    <link rel="icon" type="image/x-icon" href="../assets/images/Caringbytes Square Logo 512.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/gallery.css">
+    <title>Caringbytes</title>
+  </head>
+  <body style="color-scheme: light;">
+    <header w3-include-html="header.html" style="width:100%;"></header>
+    <main class="carousel-holder" style="background-color: var(--cb-dark-blue);  min-height: 100vh;">
+      <h1 style="color: white;">Gallery</h1>
+      <div class="carousel">
+        <div class="backward-photo-holder">
+          <button aria-label="Backwards photo button" class="backward-photo-button" onclick="backwardPhoto()">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+              <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
+            </svg>
+          </button>
+        </div>
+        <div class="photo-holder">
+          <img id="photo" src="../assets/images/carousel-photos/classroom.jpg" alt="photo">
+        </div>
+        <div class="forward-photo-holder">
+          <button aria-label="Forwards photo button" class="forward-photo-button" onclick="forwardPhoto()">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+              <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="carousel-mobile">
+        <div class="photo-holder">
+          <img id="photo-mobile" src="../assets/images/carousel-photos/classroom.jpg" alt="photo">
+        </div>
+        <div class="carousel-mobile-button-holder">
+          <div class="backward-photo-holder">
+            <button aria-label="Backwards photo button" class="backward-photo-button" onclick="backwardPhoto()">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
+              </svg>
+            </button>
+          </div>
+          <div class="forward-photo-holder">
+            <button aria-label="Forwards photo button" class="forward-photo-button" onclick="forwardPhoto()">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <h2 id="photo-description" style="color: white; font-weight: normal; transition: opacity 200ms ease-in-out; width: 95%">This is a description of the picture</h2>
+    </main>
+    <script src="../js/main.js"></script>
+    <script>
+      includeHTML();
+      loadPhoto(0, false);
+    </script>
+  </body>
+</html>

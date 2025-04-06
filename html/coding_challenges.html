@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="../manifest.json" />
+    <link rel="icon" type="image/x-icon" href="../assets/images/Caringbytes Square Logo 512.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/coding-challenges.css">
+    <title>Caringbytes</title>
+  </head>
+  <body style="color-scheme: light; overflow-x: hidden;">
+    <header w3-include-html="header.html" style="width:100%;"></header>
+    <main>
+      <h1 style="background-color: var(--cb-dark-blue); margin: 0px;">Coding Challenges</h1>
+      <div style="width: 100vw; margin:0px;  background-color: white; padding: 0px;">
+        <div class="grid-item-holder grid-item-holder-top">
+          <div class="grid-item">
+            <p class="font-medium">Caringbytes has weekly coding challenges posted by <b>Oliver Lai</b>! These challenges range from easy to medium to hard. There is a huge backlog of these handpicked coding challenges posted in the 'weekly challenges' channel in the Team.</p>
+          </div>
+          <div class="grid-item" style="padding: 10px; height: 50vh;">
+            <div class="scroller">
+              <div class="content">
+                <div w3-include-html="../teams-post-generator/output/post_9.html"></div>
+                <div w3-include-html="../teams-post-generator/output/post_8.html"></div>
+                <div w3-include-html="../teams-post-generator/output/post_7.html"></div>
+                <div w3-include-html="../teams-post-generator/output/post_6.html"></div>
+                <div w3-include-html="../teams-post-generator/output/post_5.html"></div>
+                <div w3-include-html="../teams-post-generator/output/post_4.html"></div>
+                <div w3-include-html="../teams-post-generator/output/post_3.html"></div>
+                <div w3-include-html="../teams-post-generator/output/post_2.html"></div>
+                <div w3-include-html="../teams-post-generator/output/post_1.html"></div>
+                <div w3-include-html="../teams-post-generator/output/post_0.html"></div>
+                <div w3-include-html="../teams-post-generator/output/post_9.html"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item-holder grid-item-holder-middle" id="leetcode-questions" style="background-color: var(--cb-red);">
+          <div class="grid-item" id="leetcode-questions-container-container">
+            <div class="leetcode-question-container">
+              <div w3-include-html="leetcode-questions/easy.html"></div>
+            </div>
+            <div class="leetcode-question-container">
+              <div w3-include-html="leetcode-questions/medium.html"></div>
+            </div>
+            <div class="leetcode-question-container">
+              <div w3-include-html="leetcode-questions/hard.html"></div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <p class="font-medium">These challenges are all created by LeetCode and handpicked by Oliver every single week.</p>
+            <p class="font-medium desktop-only">On the left you can see examples of the easy, medium, and hard questions from Weeks 2 & 3 of Term 2.</p>
+            <p class="font-medium mobile-only">Oliver posts easy, medium, and hard questions most weeks.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="../js/main.js"></script>
+    <script>
+      includeHTML();
+    </script>
+  </body>
+</html>

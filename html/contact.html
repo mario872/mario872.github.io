@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="../manifest.json" />
+    <link rel="icon" type="image/x-icon" href="../assets/images/Caringbytes Square Logo 512.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <title>Caringbytes</title>
+  </head>
+  <body style="color-scheme: light; overflow-x: hidden;">
+    <header w3-include-html="header.html" style="width:100%;"></header>
+    <main style="background-color: var(--cb-dark-blue);">
+      <h1 style="padding-top: 20px; text-align: center;">Contact Us</h1>
+      <p class="description-text">Want to know more about us?</p>
+      <p class="description-text">Want to be added to the Microsoft Team?</p>
+      <p class="description-text">Socially awkward and don't want to have to ask one of our leaders a question in person?</p>
+      <div id="contact-us-container" class="contact-us-container">
+        <form autocomplete="off" onsubmit="return false;">
+          <div style="display: flex; flex-direction: row;">
+            <label for="name" style="margin-right: 10px;">Name:</label>
+            <input type="text" id="name" name="name" placeholder="What do you want us to call you?" required>
+          </div>
+          <div style="display: flex; flex-direction: row; margin-top: 15px;">
+            <label for="email" style="margin-right: 10px;"> Your Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Your email address goes here." required>
+          </div>
+          <label for="message" style="margin-top: 15px;">Your message: ⬇️</label>
+          <textarea id="message" name="message" placeholder="01011001 01101111 01110101 01110010 00100000 01101101 01100101 01110011 01110011 01100001 01100111 01100101 00100000 01100111 01101111 01100101 01110011 00100000 01101000 01100101 01110010 01100101 00101110" required></textarea>
+          <div style="display: flex; flex-direction: row;">
+            <label for="leader-to-contact" style="margin-right: 10px; margin-top: 15px;">Leader to contact:</label>
+            <select name="leader-to-contact" id="leader-to-contact" required>
+              <option value="oliver">Oliver Lai</option>
+              <option value="hamish">Hamish Magill</option>
+              <option value="ethan">Ethan Phillips</option>
+            </select>
+          </div>
+          <input type="submit" class="submit-button" onclick="showSuccessForm();">
+        </form>
+        <p id="success-form-text" style="margin: 20px; color: rgb(73, 252, 73); display: none;">Success! We will get back to you as soon as possible.</p>
+      </div>
+    </main>
+    <script src="../js/main.js"></script>
+    <script>
+      includeHTML();
+    </script>
+  </body>
+</html>

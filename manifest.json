@@ -1,0 +1,12 @@
+{
+    "name": "Caringbytes",
+    "start_url": "index.html",
+    "display": "standalone",
+    "icons": [
+      {
+        "src": "assets/images/Caringbytes Square Logo 512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ]
+  }

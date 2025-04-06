@@ -1,30 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Tin Dog</title>
-</head>
-<body>
-    <script src="main.js"></script>
-    <div style="margin: 0 auto; padding: 0 20px 20px 20px; border: 5px solid black; width:400px;">
-        <h1>Tin Dog</h1>
-        <img class="center-image" src="tin-dog-logo.svg" alt="The Tin Dog logo">
-        <h2 class="center-text" style="margin-bottom: 0; line-height: 40px">About Me</h2>
-        <p>I'm James Glynn and I like solving problems.</p>
-        <p>The languages I currently know are:</p>
-        <button id="reveal-languages-list-button" style="border-radius: 10px; width: 100px; height: 25px; margin: 0 150px;" type="button" onclick="revealLanguages()">Reveal</button>
-        <ul id="languages-list">
-            <li class="hidden" id="languages-list-english">English</li>
-            <li class="hidden" id="languages-list-python">Python</li>
-            <li class="hidden" id="languages-list-javascript">JavaScript (a little bit)</li>
-            <li class="hidden" id="languages-list-html-css">HTML/CSS (enough to get by)</li>
-        </ul>
-        <p>I also really love making useful and/or fun things.</p>
-        <p>I've made Sonic Screwdrivers that turn on and off TV's (and school whiteboards).</p>
-        <p>I've made a TARDIS console with buttons, switches, screens, and the added bonus that it can control my smart home.</p>
-        <p>I'm currently making a device that can move to track people using mmWave sensors, which send out 24gHz radio signals to detect humans in a room, and their approximate distance.</p>
-    </div>
-</body>
+    <link rel="manifest" href="manifest.json"/>
+    <link rel="icon" type="image/x-icon" href="assets/images/Caringbytes Square Logo 512.png">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Caringbytes</title>
+  </head>
+  <body>
+    <header w3-include-html="html/header.html" style="width:100%;"></header>
+    <main style="background-color: var(--cb-green);">
+      <h1 style="background-color: var(--cb-dark-blue); margin: 0px;">Caringbytes</h1>
+      <div class="grid-item-holder grid-item-holder-top">
+        <div class="grid-item" style="margin-top: 0;">
+          <img src="assets/images/Caringbytes-Logo.png" alt="The Caringbytes Logo" style="height: 150px; display: block; margin: 10px auto; margin-bottom: 0px; object-fit: cover;">
+        </div>
+        <div class="grid-item" style="margin: 5px;">
+          <p id="caringbytes-description-text" class="font-medium">Caringbytes is the Caringbah High School Coding club, run in TF.15 on Mondays at lunch. Come and hang out with other coders who are just as <s id="insane-text" onmouseover="document.getElementById('insane-text').style.display = 'none';">obsessed</s> interested in coding as you are. </p>
+        </div>
+      </div>
+      <div class="grid-item-holder grid-item-holder-middle">
+        <div class="grid-item" style="display: block; margin: auto 2px;">
+          <p class="quote-medium">- - -</p>
+          <q class="quote-medium" style="display:block;">It [Caringbytes] is an excellent opportunity for those who share a passion for coding to get together and discuss personal projects, work on a current club project or even learn to code from scratch! (no pun intended)</q>
+          <p class="quote-medium" style="font-size: 1.5em;">Caringbytes Discord</p>
+          <p class="quote-medium">- - -</p>
+        </div>
+        <div class="grid-item" style="text-align: center;">
+          <img src="assets/images/first-meme.jpg" alt="A meme that comments on the mind of a coder" style="display: block; width: 320px; margin: 10px auto; border: 4px solid var(--cb-red-dark)">
+        </div>
+      </div>
+      <div style="width: 100vw; background-color: var(--cb-green); padding: 2vh 0px;">
+        <img src="assets/images/carousel-photos/classroom.jpg" alt="An image of Caringbytes participating in the Cupcake Competition" style="width: 98vw; height: 500px; display: block; margin: auto auto; object-fit: cover; border: 4px solid var(--cb-green-dark)">
+      </div>
+    </main>
+    <script src="js/main.js"></script>
+    <script>
+      includeHTML();
+    </script>
+  </body>
 </html>

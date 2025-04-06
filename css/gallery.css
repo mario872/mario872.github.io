@@ -1,0 +1,132 @@
+.carousel-holder {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100vw;
+    height: 90vh;
+    background-color: var(--cb-dark-blue);
+}
+
+.carousel {
+    display: grid;
+    grid-template-columns: 1fr 40fr 1fr;
+    align-items: center;
+    width: 90vw;
+    max-height: 100vh;
+    margin: 0px;
+    background-color: var(--cb-dark-blue);
+    padding: 0px;
+}
+
+.carousel-mobile {
+    display: none;
+}
+
+.photo-holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    height: 70vh;
+    overflow: hidden;
+    padding: 5px;
+}
+.photo-holder img {
+    max-height: 100%;
+    width: auto;
+    object-fit: contain;
+    border: 4px solid var(--cb-blue);
+    margin: 5px;
+    opacity: 1;
+    transition: opacity 100ms ease-in-out;
+}
+
+.photo-holder img.hidden {
+    opacity: 0;
+}
+
+button {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    background-color: var(--cb-red);
+    border: 2px solid var(--cb-dark-red);
+    transition: width 200ms, height 200ms, margin 200ms, background-color 100ms;
+}
+
+button svg {
+    fill: white;
+}
+
+button:hover {
+    width: 45px;
+    height: 45px;
+    margin: 22.5px;
+    background-color: var(--cb-dark-red);
+}
+
+.forward-photo-button {
+    margin-right: 20px;
+}
+
+.backward-photo-button {
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .carousel-holder {
+        padding-top: 0px;
+        margin: 0px 0px;
+        padding: 0px;
+    }
+
+    .carousel {
+        display: none;
+    }
+
+    .carousel-mobile {
+        display: grid;
+        align-items: center;
+        max-height: 100vh;
+        margin: 0px;
+        background-color: var(--cb-dark-blue);
+        padding: 0px;
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .carousel-mobile-button-holder {
+        margin: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .photo-holder {
+        height: 30vh;
+    }
+
+    button {
+        transition: auto;
+    }
+
+    button:hover {
+        margin: 10px;
+        width: 50px;
+        height: 50px;
+        background-color: var(--cb-red);
+    }
+
+    .forward-photo-button {
+        margin: 10px;
+    }
+
+    .backward-photo-button {
+        margin: 10px;
+    }
+}

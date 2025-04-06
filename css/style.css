@@ -1,0 +1,344 @@
+:root {
+    --cb-light-orange: #fdbda6;
+    --cb-orange: #ef6d3f;
+    --cb-dark-orange: #c95328;
+    --cb-blue: #2a74cf;
+    --cb-light-blue: #5a9beb;
+    --cb-dark-blue: #1d4580;
+    --cb-green: #3f6c51;
+    --cb-dark-green: #2a5c3e;
+    --cb-red: #8c2f39;
+    --cb-dark-red: rgb(112, 28, 36);
+    --cb-light-red: rgb(187, 79, 90);
+    --fa-primary: #2a74cf;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: #b9b8b8;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--cb-blue);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--cb-blue-light);
+}
+
+@font-face {
+    font-family: "Outfit";
+    src: url("../assets/fonts/Outfit-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Segoe UI This";
+    src: url("../assets/fonts/segoe-ui-this/segoeuithis.ttf");
+}
+
+.sr-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+p, i, b, u, li, a, strong, em, q, h1, h2, h3, h4, h5, h6, button {
+    font-family: "Outfit", "Arial"; /* Arial is a fallback font, JUST IN CASE Outfit doesn't load */
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 3rem;
+}
+
+body {
+    background-color: light-dark(#f0f0f0, #323847);
+    margin: 0px;
+    padding: 0px;
+    margin-top: 70px;
+    overflow-x: hidden;
+}
+
+main {
+    overflow-x: hidden;
+}
+
+.header {
+    background-color: var(--cb-orange);
+    padding: 3px;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 20fr;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1000;
+}
+
+.caringbytes-logo-header {
+    width: auto;
+    height: 64px;
+    margin: 3px 5px;
+    transition: height 200ms ease, margin 200ms ease;
+}
+
+.caringbytes-header-text {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-size: 2.3rem;
+    text-decoration: none;
+    transition: color 200ms ease;
+}
+
+.caringbytes-header-text:hover {
+    color: var(--cb-light-orange);
+}
+
+.caringbytes-logo-header:hover {
+    margin: 8px 10px;
+    height: 54px;
+}
+
+.grid-item-holder {
+    width: 100vw;
+    grid-template-rows: 100%;
+}
+
+.grid-item {
+    margin: 5px;
+    height: min-content;
+}
+
+.grid-item-small {
+    width: 33vh;
+}
+
+.grid-item-large {
+    width: 66vw;
+}
+
+.quote-medium {
+    font-size: 2em;
+    text-align: center;
+    white-space: pre-wrap;
+}
+
+.white-text {
+    color: white;
+}
+
+.font-medium {
+    font-size: 2em;
+}
+.font-small {
+    font-size: 1em;
+}
+
+.grid-item-holder {
+    width: 100vw;
+    grid-template-rows: 100%;
+    display: grid;
+    height: fit-content;
+}
+
+.grid-item-holder-top {
+    margin-top: 0px;
+    grid-template-columns: 33vw 66vw;
+    background-color: var(--cb-dark-blue);
+    height: fit-content;
+}
+
+.grid-item-holder-middle {
+    grid-template-columns: 66vw 33vw;
+    background-color: var(--cb-red);
+}
+
+.navbar {
+    background-color: var(--cb-orange);
+    padding: 0;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 70px;
+    position: fixed;
+    top: 0;
+}
+
+.nav-item-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.nav-item {
+    margin: auto 5px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    width: 6em;
+    height: 4em;
+}
+
+.nav-item svg {
+    justify-content: center;
+    width: 2em;
+    height: 30px;
+    fill: white;
+    margin: 17px auto;
+    transition: margin 200ms ease;
+}
+
+.nav-item-text {
+    color: white;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    transition: visibility 0s, opacity 200ms ease;
+    position: fixed;
+    top: 35px;
+    width: 6em;
+}
+
+.nav-item:hover svg {
+    margin: 5px auto;
+}
+
+.nav-item:hover .nav-item-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.navbar-mobile {
+    background-color: var(--cb-orange);
+    padding: 0;
+    margin: 0;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 70px;
+    position: fixed;
+    top: 50px;
+    width: 100vw;
+    display: none;
+    border-top: 5px solid var(--cb-dark-orange);
+    border-bottom: 5px solid var(--cb-dark-orange);
+    z-index: 1000;
+}
+
+.navbar-mobile-button {
+    width: 40px;
+    height: 40px;
+    background-color: var(--cb-orange);
+    border: 2px solid var(--cb-dark-orange);
+    transition: background-color 200ms ease;
+}
+
+.desktop-only {
+    display: block;
+}
+
+.mobile-only {
+    display: none;
+}
+
+@media only screen and (max-width: 1240px) {
+    .caringbytes-header-text {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .desktop-only {
+        display: none;
+    }
+    .mobile-only {
+        display: block;
+    }
+    body {
+        margin-top: 120px;
+    }
+
+    .caringbytes-logo-header:hover {
+        margin: 3px 5px;
+        height: 45px;
+    }
+
+    .grid-item-holder {
+        width: 100vw;
+        /* height: 110vh; */
+        grid-template-rows: auto auto;
+        display: grid;
+    }
+
+    .grid-item-holder-top {
+        padding-top: 25px;
+        grid-template-columns: 100vw;
+        grid-template-rows: auto auto;
+    }
+
+    .grid-item-holder-middle {
+        grid-template-columns: 100vw;
+    }
+
+    .header {
+        height: 50px;
+        width: 100vw;
+    }
+
+    .header img {
+        height: 45px;
+    }
+
+    .caringbytes-header-text {
+        margin-bottom: 15px;
+        font-size: 2rem;
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .navbar-mobile {
+        display: grid;
+    }
+
+    .nav-item {
+        width: min-content;
+        text-align: left;
+    }
+
+    .nav-item:last-child {
+        margin-right: 0;
+    }
+
+    .nav-item svg {
+        margin: 10px auto;
+        transition: none;
+    }
+
+    .nav-item:hover svg {
+        margin: 10px auto;
+    }
+
+    .nav-item-text {
+        visibility: visible;
+        opacity: 1;
+        font-size: 0.75rem;
+        top: 100px;
+    }
+}

@@ -1,0 +1,261 @@
+{
+    "posts": [
+        {
+            "title": "Week 1",
+            "date": "14/10/2024",
+            "time": "13:21",
+            "content": [
+                {
+                    "text": "Welcome to Caringbytes Weekly Challenges! Each week, we'll post around 3 problems for you to try and solve! Here are this week's problems:"
+                },
+                {
+                    "text": "https://leetcode.com/problems/count-primes/description/"
+                },
+                {
+                    "text": "https://leetcode.com/problems/booking-concert-tickets-in-groups/description/"
+                },
+                {
+                    "text": "https://leetcode.com/problems/minimum-speed-to-arrive-on-time/description/"
+                },
+                {
+                    "text": "Feel free to post solutions here!"
+                }
+            ]
+        },
+        {
+            "title": "Week 2",
+            "date": "21/10/2024",
+            "time": "13:18",
+            "content": [
+                {
+                    "text": "Week 2 has arrived!"
+                },
+                {
+                    "text": "https://leetcode.com/problems/convert-integer-to-the-sum-of-two-no-zero-integers/description/"
+                },
+                {
+                    "text": "https://leetcode.com/problems/task-scheduler-ii/description/"
+                },
+                {
+                    "text": "https://leetcode.com/problems/right-triangles/description/"
+                }
+            ]
+        },
+        {
+            "title": "Week 3",
+            "date": "28/10/2024",
+            "time": "13:17",
+            "content": [
+                {
+                    "text": "A wild Week 3 Challenges appeared!"
+                },
+                {
+                    "text": "https://leetcode.com/problems/minimum-sum-of-mountain-triplets-i/description/"
+                },
+                {
+                    "text": "https://leetcode.com/problems/h-index/description/"
+                },
+                {
+                    "text": "https://leetcode.com/problems/array-nesting/description/"
+                },
+                {
+                    "text": "Hard!"
+                },
+                {
+                    "text": "https://leetcode.com/problems/minimum-cost-to-hire-k-workers/description/"
+                }
+            ]
+        },
+        {
+            "title": "Week 4",
+            "date": "04/11/24",
+            "time": "13:16",
+            "content": [
+                {
+                    "text": "Week 4 Challenges joins the battle!"
+                },
+                {
+                    "text": "https://leetcode.com/problems/valid-palindrome/description/"
+                },
+                {
+                    "text": "https://leetcode.com/problems/maximum-number-of-jumps-to-reach-the-last-index/description/"
+                },
+                {
+                    "text": "https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-ii/description/"
+                },
+                {
+                    "text": "Hard!"
+                },
+                {
+                    "text": "https://leetcode.com/problems/count-number-of-possible-root-nodes/description/"
+                }
+            ]
+        },
+        {
+            "title": "Week 5",
+            "date": "11/11/2024",
+            "time": "13:14",
+            "content": [
+                {
+                    "text": "I ran out of ideas here so Week 5!"
+                },
+                {
+                    "text": "https://leetcode.com/problems/maximum-gap/description/"
+                },
+                {
+                    "text": "https://leetcode.com/problems/divide-intervals-into-minimum-number-of-groups/description/"
+                },
+                {
+                    "text": "https://leetcode.com/problems/escape-the-spreading-fire/description/"
+                },
+                {
+                    "text": "Hard:"
+                },
+                {
+                    "text": "https://leetcode.com/problems/longest-increasing-path-in-a-matrix/description/"
+                }
+            ]
+        },
+        {
+            "title": "Week 6",
+            "date": "25/11/24",
+            "time": "13:15",
+            "content": [
+                {
+                    "text": "Here's last week problems:"
+                },
+                {
+                    "text": "https://leetcode.com/problems/triangle-judgement/description/"
+                },
+                {
+                    "text": "https://leetcode.com/problems/previous-permutation-with-one-swap/description/"
+                },
+                {
+                    "text": "https://leetcode.com/problems/meeting-rooms-iii/description/"
+                }
+            ]
+        },
+        {
+            "title": "Week 7",
+            "date": "25/11/2024",
+            "time": "13:16",
+            "content": [
+                {
+                    "text": "And here are this week's problems!"
+                },
+                {
+                    "text": "https://leetcode.com/problems/maximum-product-of-word-lengths/description/"
+                },
+                {
+                    "text": "https://leetcode.com/problems/find-products-of-elements-of-big-array/description/"
+                },
+                {
+                    "text": "https://leetcode.com/problems/minimum-absolute-sum-difference/description/"
+                }
+            ]
+        },
+        {
+            "title": "Week 8",
+            "date": "02/12/2024",
+            "time": "13:15",
+            "content": [
+                {
+                    "text": "Week 8 joins the battle!"
+                },
+                {
+                    "text": "https://leetcode.com/problems/product-price-at-a-given-date/description/"
+                },
+                {
+                    "text": "https://leetcode.com/problems/grumpy-bookstore-owner/description/"
+                },
+                {
+                    "text": "https://leetcode.com/problems/employee-bonus/description/"
+                }
+            ]
+        },
+        {
+            "title": "Season 2 Weeek 1",
+            "date": "17/02/2025",
+            "time": "13:21",
+            "content": [
+                {
+                    "text": "Have fun:"
+                },
+                {
+                    "text": "https://leetcode.com/problems/strange-printer-ii/description/"
+                },
+                {
+                    "text": "https://leetcode.com/problems/text-justification/description/"
+                },
+                {
+                    "text": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/description"
+                }
+            ]
+        },
+        {
+            "title": "Season 2 Weeks 2 & 3",
+            "date": "03/03/2025",
+            "time": "13:19",
+            "content": [
+                {
+                    "text": "Here's week 2 and 3's problems:"
+                },
+                {
+                    "text": "Easy:"
+                },
+                {
+                    "text": "https://leetcode.com/problems/minimum-value-to-get-positive-step-by-step-sum/description/"
+                },
+                {
+                    "text": "https://leetcode.com/problems/last-stone-weight/description/"
+                },
+                {
+                    "text": "Medium:"
+                },
+                {
+                    "text": "https://leetcode.com/problems/rle-iterator/description/"
+                },
+                {
+                    "text": "https://leetcode.com/problems/unique-paths/description/"
+                },
+                {
+                    "text": "Hard:"
+                },
+                {
+                    "text": "https://leetcode.com/problems/equal-rational-numbers/description/"
+                },
+                {
+                    "text": "https://leetcode.com/problems/number-of-ways-to-reorder-array-to-get-same-bst/description/"
+                }
+            ]
+        },
+        {
+            "title": "Weeks 4 and 5",
+            "date": "17/3/2025",
+            "time": "13:20",
+            "content": [
+                {
+                    "text": "https://leetcode.com/problems/longest-consecutive-sequence/description/"
+                },
+                {
+                    "text": "https://leetcode.com/problems/matrix-similarity-after-cyclic-shifts/description/"
+                },
+                {
+                    "text": "https://leetcode.com/problems/delete-characters-to-make-fancy-string/description/"
+                },
+                {
+                    "text": "https://leetcode.com/problems/build-a-matrix-with-conditions/description/"
+                },
+                {
+                    "text": "https://leetcode.com/problems/maximum-points-inside-the-square/description/"
+                },
+                {
+                    "text": "https://leetcode.com/problems/boats-to-save-people/description/"
+                },
+                {
+                    "text": "https://leetcode.com/problems/number-of-times-binary-string-is-prefix-aligned/description/"
+                }
+            ]
+        }
+    ]
+}
